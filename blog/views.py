@@ -33,7 +33,7 @@ def post_list(request, tag_slug=None):
         posts = paginator.page(paginator.num_pages)
     return render(request,
                  'blog/post/list.html',
-                 {'page': page,
+                 {#'page': page,
                   'posts': posts,
                   'tag': tag})
 
